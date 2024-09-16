@@ -23,3 +23,12 @@ saveButton.addEventListener('click', () => {
     localStorage.setItem('markdownDraft', markdownText); // Save draft to local storage
     alert('Draft saved!'); // Notify the user
 });
+
+// Load saved draft from local storage if available
+document.addEventListener('DOMContentLoaded', () => {
+    const savedDraft = localStorage.getItem('markdownDraft'); // Retrieve draft from local storage
+    if (savedDraft) {
+        editor.value = savedDraft; // Set editor content to saved draft
+        updatePreview(); // Update preview with saved draft
+    }
+});
