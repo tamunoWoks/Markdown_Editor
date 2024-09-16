@@ -11,3 +11,8 @@ function updatePreview() {
     preview.innerHTML = marked(markdownText); // Convert Markdown to HTML
     Prism.highlightAll(); // Apply syntax highlighting to code blocks
 }
+
+// Event listener for input changes in the editor
+editor.addEventListener('input', updatePreview);
+// Initial call to update preview when the page loads
+document.addEventListener('DOMContentLoaded', updatePreview);
