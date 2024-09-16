@@ -32,3 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
         updatePreview(); // Update preview with saved draft
     }
 });
+
+// Export the Markdown content as an HTML file
+exportHtmlButton.addEventListener('click', () => {
+    const markdownText = editor.value; // Get Markdown text from editor
+    const htmlContent = marked(markdownText); // Convert Markdown to HTML
+    const blob = new Blob([htmlContent], { type: 'text/html' }); // Create a Blob object with HTML content
+    const url = URL.createObjectURL(blob); // Create an object URL for the Blob
+    const a = document.createElement('a'); // Create a temporary anchor element
+    a.href = url; // Set the href to the Blob URL
+    a.download = 'document.html'; // Set the default file name
+    a.click(); // Trigger the download
+    URL.revokeObjectURL(url); // Release the object URL
+});
