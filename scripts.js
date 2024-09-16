@@ -16,3 +16,10 @@ function updatePreview() {
 editor.addEventListener('input', updatePreview);
 // Initial call to update preview when the page loads
 document.addEventListener('DOMContentLoaded', updatePreview);
+
+// Save the current draft to local storage
+saveButton.addEventListener('click', () => {
+    const markdownText = editor.value; // Get Markdown text from editor
+    localStorage.setItem('markdownDraft', markdownText); // Save draft to local storage
+    alert('Draft saved!'); // Notify the user
+});
