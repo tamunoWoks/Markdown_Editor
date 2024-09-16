@@ -4,15 +4,10 @@ This Markdown Editor project provides a user-friendly interface for editing and 
 
 ## Features
 - Markdown Editing: Users can input Markdown text in a textarea. The editor supports basic Markdown syntax for formatting text, including headings, lists, links, and code blocks.
-
 - Live Preview: As users type Markdown text, the content is instantly converted to HTML and displayed in a live preview pane. This feature uses the Marked.js library to parse Markdown into HTML.
-
 - Syntax Highlighting: Code blocks within the Markdown text are highlighted using Prism.js. This library provides syntax highlighting for various programming languages, making code snippets more readable.
-
 - Draft Saving: Users can save their current Markdown draft to the browser's local storage with a single click. The saved draft is automatically loaded when the page is revisited, allowing users to continue editing from where they left off.
-
 - Export to HTML: The editor includes a button to export the Markdown content as an HTML file. The content is converted to HTML using Marked.js, and then a downloadable Blob is created for user download.
-
 - Export to PDF: Users can export the Markdown content to a PDF file. The content is converted to HTML and then rendered into a PDF using jsPDF, providing a downloadable PDF file for users.
 
 ## Technologies Used
@@ -31,4 +26,5 @@ To use the Markdown Editor:
 3. Click the "Save Draft" button to save the current content to local storage.
 4. Click the "Export to HTML" button to download the Markdown content as an HTML file.
 5. Click the "Export to PDF" button to download the Markdown content as a PDF file.  
+
 This project is designed to be easily extensible. Additional features such as more advanced Markdown parsing, customizable themes, or enhanced export options can be added as needed.
