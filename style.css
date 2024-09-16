@@ -42,3 +42,19 @@ textarea {
 .buttons {
     margin-top: 10px; /* Margin above buttons */
 }
+
+/* Basic styling for buttons */
+button {
+    padding: 10px 20px; /* Padding inside buttons */
+    margin-right: 10px; /* Space between buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}
