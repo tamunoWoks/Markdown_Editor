@@ -9,3 +9,9 @@ body {
     height: 100vh; /* Full viewport height */
     background-color: #f4f4f4; /* Light gray background */
 }
+
+/* Styling for the container */
+.container {
+    width: 80%; /* Container width */
+    max-width: 1200px; /* Maximum width */
+}
