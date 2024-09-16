@@ -27,3 +27,13 @@ textarea {
     border-radius: 4px; /* Rounded corners */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
+
+* Styling for the preview area */
+.preview {
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside preview area */
+    margin-top: 10px; /* Margin above preview area */
+    background-color: #fff; /* White background */
+    min-height: 300px; /* Minimum height */
+}
