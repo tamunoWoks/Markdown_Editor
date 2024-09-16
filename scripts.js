@@ -45,3 +45,17 @@ exportHtmlButton.addEventListener('click', () => {
     a.click(); // Trigger the download
     URL.revokeObjectURL(url); // Release the object URL
 });
+
+// Export the Markdown content as a PDF file
+exportPdfButton.addEventListener('click', () => {
+    const markdownText = editor.value; // Get Markdown text from editor
+    const htmlContent = marked(markdownText); // Convert Markdown to HTML
+    const pdf = new jsPDF(); // Create a new jsPDF instance
+    pdf.html(htmlContent, { // Add HTML content to the PDF
+        callback: function (pdf) {
+            pdf.save('document.pdf'); // Save the PDF file
+        },
+        x: 10, // X position for the content
+        y: 10 // Y position for the content
+    });
+});
