@@ -26,5 +26,3 @@ To use the Markdown Editor:
 3. Click the "Save Draft" button to save the current content to local storage.
 4. Click the "Export to HTML" button to download the Markdown content as an HTML file.
 5. Click the "Export to PDF" button to download the Markdown content as a PDF file.  
-
-This project is designed to be easily extensible. Additional features such as more advanced Markdown parsing, customizable themes, or enhanced export options can be added as needed.
