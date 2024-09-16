@@ -1,4 +1,4 @@
-# Markdown
+# Markdown Editor
 ## Project Overview
 This Markdown Editor project provides a user-friendly interface for editing and previewing Markdown content in real-time. It includes features for live preview of Markdown text, syntax highlighting for code blocks, saving drafts locally, and exporting the content to both HTML and PDF formats. This project showcases essential web development skills, including HTML, CSS, and JavaScript, and leverages third-party libraries for enhanced functionality.
 
