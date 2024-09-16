@@ -37,3 +37,8 @@ textarea {
     background-color: #fff; /* White background */
     min-height: 300px; /* Minimum height */
 }
+
+/* Styling for buttons container */
+.buttons {
+    margin-top: 10px; /* Margin above buttons */
+}
