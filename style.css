@@ -1,1 +1,11 @@
-
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif; /* Set font for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light gray background */
+}
